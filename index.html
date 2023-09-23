@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Game</title>
+    <link rel="icon" type="image/x-icon" href="https://freesvg.org/img/publicdomainq-treasure.png">
+	<link rel="stylesheet" href="styles.css">
+  
+</head>
+	<body>
+		<!--<div class="toggle">
+			<input type="checkbox" id="toggle" />
+			<label for="toggle"></label>
+		</div>-->
+		<h1 id="top">Treasure Hunt Game</h1>
+		<img id="pirate" src="https://cdn.pixabay.com/photo/2017/11/07/23/55/pirate-2928821_1280.jpg" height="250px"alt="Pirate, Treasure, Parrot" />
+		<h2>Instructions:</h2>
+		<div class="instructions">
+			<ul>
+				<li>Click the boxes to reveal what's on the map</li>
+				<li>If you click on the bomb, you lose</li>
+				<li>If you click on the treasure, you win</li>
+				
+			</ul>
+		</div>
+    <!-- <img id="pirate" src="https://cdn.pixabay.com/photo/2017/11/07/23/55/pirate-2928821_1280.jpg" height="250px"alt="Pirate, Treasure, Parrot" /> -->
+
+    <table id="9" class="flex-container">
+    	<tr>
+    		<td id="0" onclick="treasure(0)">🌴</td>
+    		<td id="1" onclick="treasure(1)">🌴</td>
+    		<td id="2" onclick="treasure(2)">🌴</td>
+    	</tr>
+    	<tr>
+    		<td id="3" onclick="treasure(3)">🌴</td>
+    		<td id="4" onclick="treasure(4)">🌴</td>
+    		<td id="5" onclick="treasure(5)">🌴</td>
+    	</tr>
+    	<tr>
+    		<td id="6" onclick="treasure(6)">🌴</td>
+    		<td id="7" onclick="treasure(7)">🌴</td>
+    		<td id="8" onclick="treasure(8)">🌴</td>
+    	</tr>
+    </table>
+    <button type="button" onclick="location.reload()">Restart Game</button>
+    <footer>&copy; Jesus & Kevin | <a href="https://google.com" target="_blank">Google</a>
+    </footer>
+    <script type="text/javascript" src="treasure.js"></script>
+    
+	</body>
+</html>
